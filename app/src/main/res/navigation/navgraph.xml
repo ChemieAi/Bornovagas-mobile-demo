@@ -64,6 +64,9 @@
         <action
             android:id="@+id/action_cartFragment_to_allCoffeeListFragment"
             app:destination="@id/allCoffeeListFragment" />
+        <action
+            android:id="@+id/action_cartFragment_to_ticketFragment"
+            app:destination="@id/ticketFragment" />
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
@@ -87,6 +90,18 @@
             app:destination="@id/loginFragment" />
         <action
             android:id="@+id/action_registerFragment_to_allCoffeeListFragment"
+            app:destination="@id/allCoffeeListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ticketFragment"
+        android:name="com.first.coffeeorderappone.TicketFragment"
+        android:label="fragment_ticket"
+        tools:layout="@layout/fragment_ticket" >
+        <action
+            android:id="@+id/action_ticketFragment_to_cartFragment"
+            app:destination="@id/cartFragment" />
+        <action
+            android:id="@+id/action_ticketFragment_to_allCoffeeListFragment"
             app:destination="@id/allCoffeeListFragment" />
     </fragment>
 </navigation>
